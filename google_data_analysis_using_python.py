@@ -43,7 +43,7 @@ fig =px.choropleth(region_data,
      locations ='geoName',
      locationmode= 'country names',
      color=keyword,
-     title=f"Search Interest for '{keyword}' by Country",
+     title= f"Search Interest for '{keyword}' by Country",
      color_continuous_scale='Blues')
 fig.show()
 
