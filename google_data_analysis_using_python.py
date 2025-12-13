@@ -49,7 +49,7 @@ fig.show()
 
 """Time wise interest"""
 
-time_df =pytrends.interest_over_time()
+time_df  =pytrends.interest_over_time()
 plt.figure(figsize=(12,6))
 plt.plot(time_df.index, time_df [keyword], marker ='o', color = 'purple')
 plt.title(f"search interest over time {keyword}")
