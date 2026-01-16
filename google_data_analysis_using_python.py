@@ -26,7 +26,7 @@ keyword=input("Enter your search ")
 
 pytrends.build_payload([keyword], cat=0, timeframe ='today 12-m', geo='', gprop='')
 
-"""country wise interest"""
+"""country wise interest """
 
 region_data =pytrends.interest_by_region()
 region_data=region_data.sort_values(by= keyword, ascending =False).head(15)
