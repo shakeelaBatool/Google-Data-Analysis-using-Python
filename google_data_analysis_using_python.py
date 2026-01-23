@@ -65,7 +65,7 @@ plt.show()
 kw_list = ["cloud computing", "data science", "machine learning"]
 pytrends.build_payload(kw_list, cat= 0, timeframe ='today 12-m', geo='',gprop="")
 
-compare_df= pytrends.interest_over_time()
+compare_df=pytrends.interest_over_time()
 plt.figure(figsize=(12,6))
 for kw in kw_list:
         plt.plot(compare_df.index, compare_df [kw], label =kw)
