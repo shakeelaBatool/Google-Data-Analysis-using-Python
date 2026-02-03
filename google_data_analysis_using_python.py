@@ -31,7 +31,7 @@ pytrends.build_payload([keyword], cat=0, timeframe ='today 12-m', geo='', gprop=
 region_data = pytrends.interest_by_region()
 region_data=region_data.sort_values(by= keyword, ascending =False).head(15)
 
-plt.figure(figsize =(18,6))
+plt.figure(figsize = (18,6))
 sns.barplot(x =region_data[keyword], y= region_data.index, palette= "Blues_d")
 plt.title(f"Top Countries searching for '{keyword}')")
 plt.xlabel("Interest")
