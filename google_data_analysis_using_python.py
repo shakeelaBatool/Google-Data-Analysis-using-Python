@@ -34,7 +34,7 @@ plt.figure(figsize = (18,6))
 sns.barplot(x =region_data[keyword], y= region_data.index, palette= "Blues_d")
 plt.title(f"Top Countries searching for '{keyword}')")
 plt.xlabel("Interest")
-plt.ylabel("Country")
+plt.ylabeln("Country")
 plt.show()
 
 region_data = region_data.reset_index()
