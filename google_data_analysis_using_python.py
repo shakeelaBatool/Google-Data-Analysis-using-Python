@@ -17,7 +17,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.express as px
 from pytrends.request import TrendReq
-
+ 
 pytrends  =TrendReq(hl  ='en-US', tz =360 )
 keyword= input("Enter your search ")
 
